@@ -1,0 +1,83 @@
+/* Importing the 'Poppins' font from Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+/* General reset for margin, padding and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Setting default font */
+}
+
+/* Center aligns all text within the body */
+body {
+  text-align: center;
+}
+
+/* Styling for the main container */
+#container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: url("background.png") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensures background covers entire container */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+}
+
+/* Applies border radius to all images */
+img {
+  border-radius: 20px;
+}
+
+/* Styling for the content within the container */
+#container.content {
+  max-width: 600px; /* Sets maximum width for content */
+  text-align: center;
+}
+
+/* Styling for H2 heading */
+#container .content h2 {
+  font-size: 60px;
+  color: #dc143c; /* Red color for H2 heading */
+  text-align: center;
+}
+
+/* Styling for H4 heading */
+#container .content h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #202452; /* Dark blue color for H4 heading */
+  text-align: center;
+}
+
+/* Styling for paragraph text */
+#container .content p {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: black; /* Overriding color to black */
+}
+
+/* Styling for links */
+#container .content a {
+  display: inline-block;
+  padding: 12px 50px;
+  background: #202452; /* Dark blue background for links */
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  border: 2px solid #f1f1f1; /* Adds border */
+  border-radius: 8px; /* Rounded corners for links */
+  margin-top: 16px;
+  transition: 0.3s linear; /* Transition for hover effect */
+}
+
+/* Hover effect for links */
+#container .content a:hover {
+  background-color: #242d93; /* Changes background color on hover */
+}
